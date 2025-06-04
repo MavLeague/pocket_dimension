@@ -1,0 +1,36 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:warped_fungus_on_a_stick",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_name": {"text":"Unstable Pocket Dimension"},
+                "minecraft:rarity": "epic",
+                "minecraft:custom_model_data": {
+                    "strings": [
+                        "unstable_pocket"
+                    ]
+                },
+                "minecraft:lore": [
+                  {"color":"white","italic":false,"text":"It can only be used once to leave the room"},
+                  [{"color":"blue","italic":false,"text":"Requirement: "},{"bold":true,"italic":false,"text":"None"}]
+                ],
+                "minecraft:custom_data": {
+                  "pocket":1,
+                  "pocket_unstable":1,
+                  "pocket_id":-1
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
