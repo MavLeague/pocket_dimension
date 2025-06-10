@@ -8,7 +8,7 @@ $execute in pocket_dimension:realm run data modify entity @n[tag=pocket_dimensio
 
 # check for correct item
 $scoreboard players set #current_id pocket_dimension.id $(pocket_id)
-execute unless score @s pocket_dimension.id = #current_id pocket_dimension.id run loot replace entity @s weapon loot pocket_dimension:unstable_pocket
+#execute unless score @s pocket_dimension.id = #current_id pocket_dimension.id run loot replace entity @s weapon loot pocket_dimension:unstable_pocket
 
 #$item modify entity @s weapon {function:"minecraft:set_custom_data",tag:{pocket_id:$(pocket_id)}}
 
@@ -20,7 +20,7 @@ $execute in pocket_dimension:realm store success storage pocket_dimension:temp e
 execute in pocket_dimension:realm if data storage pocket_dimension:temp {enter_success:0b} run title @s actionbar {text:"Room isn't available or can't be entered!",color:"yellow"}
 
 # spawn decoration
-execute if data storage pocket_dimension:temp {enter_success:1b} run summon item_display ~ ~ ~ {Tags:["pocket_dimension","pocket_dimension.display"],item:{id:warped_fungus_on_a_stick,components:{"minecraft:custom_model_data":{strings:["pocket_display"]}}}}
+execute if data storage pocket_dimension:temp {enter_success:1b} run summon item_display ~ ~ ~ {Tags:["pocket_dimension","pocket_dimension.display"],item:{id:warped_fungus_on_a_stick,components:{"minecraft:custom_model_data":{strings:["pocket_display","outside"]}}}}
 
 
 tag @s add pocket_dimension.entered
