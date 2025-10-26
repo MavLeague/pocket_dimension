@@ -2,3 +2,4 @@
 *.ffs_db
 *.ffs_gui
 *.ffs_batch
+.notion-ignore.url
