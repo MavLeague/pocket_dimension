@@ -11,5 +11,3 @@ $execute in pocket_dimension:realm positioned $(pos_x) 0.0 0.0 run summon item_d
 
 $execute in pocket_dimension:realm positioned $(pos_x) 0.0 0.0 run fill ~-1 ~15 ~-1 ~1 ~12 ~1 minecraft:bedrock hollow
 $execute in pocket_dimension:realm positioned $(pos_x) 0 0 run summon item_display ~ ~14.0 ~ {item:{id:"minecraft:warped_fungus_on_a_stick",count:1,components:{"item_model":"pocket_dimension:display","minecraft:custom_model_data":{strings:["teleport"]}}},Tags:["pocket_dimension","pocket_dimension.display"]}
-
-say boom

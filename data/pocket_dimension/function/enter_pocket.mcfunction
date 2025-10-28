@@ -20,8 +20,7 @@ $execute in pocket_dimension:realm store success storage pocket_dimension:temp e
 execute in pocket_dimension:realm if data storage pocket_dimension:temp {enter_success:0b} run title @s actionbar {text:"Room isn't available or can't be entered!",color:"yellow"}
 
 # spawn decoration
-execute if data storage pocket_dimension:temp {enter_success:1b} \
-    run summon item_display ~ ~ ~ {Tags:["pocket_dimension","pocket_dimension.display"],item:{id:warped_fungus_on_a_stick,components:{"item_model":"pocket_dimension:display","minecraft:custom_model_data":{strings:["outside"]}}},transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0.0f,0.5f,0.0f],scale:[1f,1f,1f]}}
+$execute if data storage pocket_dimension:temp {enter_success:1b} \
+    run summon interaction ~ ~ ~ {width:0.5f,height:0.5f,response:1b,Tags:["pocket_dimension","pocket_dimension.display","pocket_dimension.display.interaction"],Passengers:[{id:"minecraft:item_display",Tags:["pocket_dimension","pocket_dimension.display","pocket_dimension.display.display"],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[1f,1f,1f]},item:{id:"minecraft:warped_fungus_on_a_stick",count:1,components:{"minecraft:item_model":"pocket_dimension:display","minecraft:custom_model_data":{strings:["outside"]}}}},{id:"minecraft:marker",Tags:["pocket_dimension","pocket_dimension.display","pocket_dimension.display.data"],data:{pocket_id:$(pocket_id)}},{id:"minecraft:armor_stand",NoGravity:1b,Marker:0b,Invisible:1b,NoBasePlate:1b,Tags:["pocket_dimension","pocket_dimension.display","pocket_dimension.display.hitbox"],attributes:[{base: 0.25d, id:"minecraft:scale"}]}]}
 
-
-tag @s add pocket_dimension.entered
+#tag @s add pocket_dimension.entered

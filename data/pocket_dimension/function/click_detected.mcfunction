@@ -11,28 +11,29 @@ execute if score #max_health pocket_dimension.data <= #health pocket_dimension.d
     run function pocket_dimension:assign_id with entity @s SelectedItem.components.minecraft:custom_data
 #
 
-# enter stable pocket
+# enter pocket
 execute if score #max_health pocket_dimension.data = #health pocket_dimension.data \
     if data entity @s SelectedItem.components.minecraft:custom_data.pocket_id \
     at @s unless dimension pocket_dimension:realm \
-    unless data entity @s SelectedItem.components.minecraft:custom_data.pocket_unstable \
     run function pocket_dimension:enter_pocket with entity @s SelectedItem.components.minecraft:custom_data
 #
 
-# enter unstable pocket
-execute if score #max_health pocket_dimension.data = #health pocket_dimension.data \
+# enter pocket creative
+execute if entity @s[gamemode=creative] \
     if data entity @s SelectedItem.components.minecraft:custom_data.pocket_id \
     at @s unless dimension pocket_dimension:realm \
-    if data entity @s SelectedItem.components.minecraft:custom_data.pocket_unstable \
     run function pocket_dimension:enter_pocket with entity @s SelectedItem.components.minecraft:custom_data
 #
 
-execute as @s[tag=pocket_dimension.entered] run tag @s remove pocket_dimension.entered
+# Note: to seperate between stable and unstable pockets use...
+#   unless data entity @s SelectedItem.components.minecraft:custom_data.pocket_unstable \
+
+#execute as @s[tag=pocket_dimension.entered] run tag @s remove pocket_dimension.entered
 
 # check for unstable
 execute if data entity @s SelectedItem.components.minecraft:custom_data.pocket_unstable run item replace entity @s weapon with air
 
 
 # debug
-execute unless score #max_health pocket_dimension.data = #health pocket_dimension.data run title @s actionbar {"text":"You require full Health!","color":"yellow"}
+execute unless score #max_health pocket_dimension.data = #health pocket_dimension.data unless entity @s[gamemode=creative] run title @s actionbar {"text":"You require full Health!","color":"yellow"}
 
