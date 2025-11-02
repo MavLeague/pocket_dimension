@@ -15,6 +15,13 @@
         }
       },
       {
+        "when": "teleport",
+        "model": {
+          "type": "minecraft:model",
+          "model": "pocket_dimension:pocket_display/teleport"
+        }
+      },
+      {
         "when": "outside",
         "model": {
           "type": "minecraft:model",
@@ -22,10 +29,17 @@
         }
       },
       {
-        "when": "teleport",
+        "when": "outside_animation",
         "model": {
           "type": "minecraft:model",
-          "model": "pocket_dimension:pocket_display/teleport"
+          "model": "pocket_dimension:pocket_display/outside_animation"
+        }
+      },
+      {
+        "when": "outside_side",
+        "model": {
+          "type": "minecraft:model",
+          "model": "pocket_dimension:pocket_display/outside_side"
         }
       }
     ]
