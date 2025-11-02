@@ -12,14 +12,14 @@ execute if score #max_health pocket_dimension.data <= #health pocket_dimension.d
 #
 
 # enter pocket
-execute if score #max_health pocket_dimension.data = #health pocket_dimension.data \
+#execute if score #max_health pocket_dimension.data = #health pocket_dimension.data \
     if data entity @s SelectedItem.components.minecraft:custom_data.pocket_id \
     at @s unless dimension pocket_dimension:realm \
     run function pocket_dimension:enter_pocket with entity @s SelectedItem.components.minecraft:custom_data
 #
 
 # enter pocket creative
-execute if entity @s[gamemode=creative] \
+#execute if entity @s[gamemode=creative] \
     if data entity @s SelectedItem.components.minecraft:custom_data.pocket_id \
     at @s unless dimension pocket_dimension:realm \
     run function pocket_dimension:enter_pocket with entity @s SelectedItem.components.minecraft:custom_data

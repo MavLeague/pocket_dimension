@@ -1,0 +1,20 @@
+{
+  "criteria": {
+    "place_pocket": {
+      "trigger": "minecraft:summoned_entity",
+      "conditions": {
+        "entity": {
+          "nbt": "{Tags:['pocket_dimension.block_initiator']}"
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "place_pocket"
+    ]
+  ],
+  "rewards": {
+    "function": "pocket_dimension:place_pocket"
+  }
+}

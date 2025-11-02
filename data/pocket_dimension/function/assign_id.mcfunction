@@ -16,3 +16,5 @@ execute if data storage pocket_dimension:temp {room_exists:0} store result stora
 execute if data storage pocket_dimension:temp {room_exists:0} store result storage pocket_dimension:temp pocket_generation.id int 1 run scoreboard players get %step_id pocket_dimension.id
 
 execute if data storage pocket_dimension:temp {room_exists:0} in pocket_dimension:realm run function pocket_dimension:generate_room with storage pocket_dimension:temp pocket_generation
+
+title @s actionbar {"text":"Dimension has been created!","color":"yellow"}
