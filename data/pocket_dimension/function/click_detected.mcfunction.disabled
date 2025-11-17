@@ -1,4 +1,4 @@
-scoreboard players reset @s pocket_dimension.warped_fungus_on_a_stick
+scoreboard players reset @s pocket_dimension.carrot_on_a_stick
 
 # prove full health
 execute store result score #max_health pocket_dimension.data run attribute @s max_health get 1

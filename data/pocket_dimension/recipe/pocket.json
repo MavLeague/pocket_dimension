@@ -6,7 +6,7 @@
     "minecraft:nether_star"
   ],
   "result": {
-    "id": "minecraft:warped_fungus_on_a_stick",
+    "id": "minecraft:carrot_on_a_stick",
         "components": {
         "minecraft:item_name": {"text":"Pocket Dimension"},
         "minecraft:rarity": "epic",
@@ -18,6 +18,6 @@
         "minecraft:custom_data": {
             "pocket":1
         }
-        }
+      }
   }
 }

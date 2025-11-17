@@ -1,4 +1,0 @@
-$item modify entity @s weapon {function:"minecraft:set_custom_data",tag:{pocket_id:$(pocket_id)}}
-item modify entity @s weapon {function:"minecraft:set_item",item:"minecraft:armor_stand"}
-item modify entity @s weapon [{"function":"minecraft:set_lore","entity":"this","lore":[{"text":"Belongs to: ","color":"blue","bold":false,"italic":false,"extra":[{"selector":"@s","bold":true}]}],"mode":"append"}]
-$item modify entity @s weapon {function:"minecraft:set_components",components:{"minecraft:entity_data":{id:"minecraft:armor_stand",Tags:["pocket_dimension","pocket_dimension.block_initiator"],equipment:{mainhand:{id:"minecraft:armor_stand",components:{"minecraft:lore":[{text:"Belongs to: ",color:"blue",bold:0,italic:0,extra:[{selector:"@s",bold:1}]}],"minecraft:custom_data":{pocket_id:$(pocket_id)}}}},Invulnerable:1b,Silent:1b,Invisible:1,NoBasePlate:1,Small:1}}}

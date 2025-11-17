@@ -1,5 +1,5 @@
 # Detect if a player is holding a warped fungus on a stick with pocket data and run the click detection function
-execute as @a[scores={pocket_dimension.warped_fungus_on_a_stick=1..}] if data entity @s SelectedItem.components.minecraft:custom_data.pocket run function pocket_dimension:click_detected
+execute as @a[scores={pocket_dimension.carrot_on_a_stick=1..}] if data entity @s SelectedItem.components.minecraft:custom_data.pocket run function pocket_dimension:assign_id
 
 # Handle interaction clicks on pocket dimension displays
 execute at @a as @e[distance=..20,type=interaction,tag=pocket_dimension.display.interaction] at @s if data entity @s interaction run function pocket_dimension:interaction_detection

@@ -12,7 +12,7 @@ $execute in pocket_dimension:realm as @n[tag=pocket_dimension.anchor,nbt={data:{
 #clear @s *[minecraft:custom_data~{pocket_unstable:1b,pocket:1b}]
 
 execute on vehicle on passengers as @s[type=item_display] run loot replace entity @s container.0 loot pocket_dimension:pocket
-$execute on vehicle on passengers as @s[type=item_display] run function pocket_dimension:set_id_slot0 {pocket_id:$(pocket_id)}
+$execute on vehicle on passengers as @s[type=item_display] run function pocket_dimension:set_id_drop {pocket_id:$(pocket_id), player_name:"$(player_name)"}
 summon item ~ ~ ~ {Tags:["pocket_dimension","pocket_dimension.item_drop"],Item:{id:"stone",count:1b}}
 execute on vehicle on passengers as @s[type=item_display] at @s run data modify entity @n[tag=pocket_dimension.item_drop] Item set from entity @s item
 say breat pocket executed

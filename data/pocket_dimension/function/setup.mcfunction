@@ -4,7 +4,7 @@ tellraw @a [{text:"Version: ",color:"yellow"},{text:"1.21.9",color:"green"},{tex
 
 # create scoreboards
 scoreboard objectives add pocket_dimension.data dummy
-scoreboard objectives add pocket_dimension.warped_fungus_on_a_stick minecraft.used:minecraft.warped_fungus_on_a_stick
+scoreboard objectives add pocket_dimension.carrot_on_a_stick minecraft.used:minecraft.carrot_on_a_stick
 scoreboard objectives add pocket_dimension.id dummy
 scoreboard objectives add pocket_dimension.break_time dummy
 
