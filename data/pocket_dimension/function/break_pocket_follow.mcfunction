@@ -10,4 +10,6 @@ $execute in $(Dimension) positioned $(Pos0) $(Pos1) $(Pos2) run summon area_effe
 # clear unstable pocket item
 #clear @s *[minecraft:custom_data~{pocket_unstable:1b,pocket:1b}]
 
-say breat pocket follow executed
+data modify storage pocket_dimension:temp pocket_break.pocket_breaked set value 1b
+
+#say breat pocket follow executed

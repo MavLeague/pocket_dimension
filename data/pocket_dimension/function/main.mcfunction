@@ -9,7 +9,7 @@ execute at @a as @e[distance=..20,type=interaction,tag=pocket_dimension.display.
 execute at @a as @e[distance=..20,tag=pocket_dimension.leave_marker,nbt={Age:2}] at @s run function pocket_dimension:remove_pocket_display
 
 # Place pocket dimension blocks initiated by armor stands
-execute at @a as @e[type=armor_stand,tag=pocket_dimension.block_initiator] at @s run function pocket_dimension:place_pocket
+execute if entity @a as @e[type=armor_stand,tag=pocket_dimension.block_initiator] at @s run function pocket_dimension:place_pocket
 
 #execute as @e[tag=test1] at @s on passengers if data entity @s {Age:2} run function pocket_dimension:testfunktion2
 #execute as @e[tag=test1] at @s on passengers if data entity @s {Age:12} on vehicle run function pocket_dimension:testfunktion3
@@ -17,3 +17,5 @@ execute at @a as @e[type=armor_stand,tag=pocket_dimension.block_initiator] at @s
 # Animate breaking pockets
 execute at @a as @e[distance=..20,type=interaction,tag=pocket_dimension.display.interaction,scores={pocket_dimension.break_time=0..200}] run scoreboard players add @s pocket_dimension.break_time 1
 execute at @a as @e[distance=..20,type=interaction,tag=pocket_dimension.display.interaction,scores={pocket_dimension.break_time=200..}] run scoreboard players reset @s pocket_dimension.break_time
+
+execute at @a as @e[distance=..20,type=interaction,tag=pocket_dimension.display.interaction] if predicate pocket_dimension:breaking_animation_tick run function pocket_dimension:breaking_animation_tick

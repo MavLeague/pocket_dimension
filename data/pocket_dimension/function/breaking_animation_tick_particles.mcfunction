@@ -1,0 +1,1 @@
+$execute in pocket_dimension:realm as @n[tag=pocket_dimension.anchor,nbt={data:{id:$(pocket_id)}}] at @s if entity @p[dz=8,dx=8,y=0,dy=8] run particle falling_dust{block_state:"minecraft:granite"} ~4 ~7.5 ~4 4 0 4 0 50 normal

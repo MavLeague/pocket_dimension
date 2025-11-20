@@ -1,0 +1,8 @@
+{
+  "model": {
+    "type": "minecraft:model",
+    "model": "pocket_dimension:blank"
+  },
+  "hand_animation_on_swap": false,
+  "oversized_in_gui": false
+}
