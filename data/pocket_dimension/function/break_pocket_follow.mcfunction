@@ -1,5 +1,5 @@
 #kick all players out of pocket
-$execute as @a[dz=8,dx=8,y=0,dy=8] run function pocket_dimension:leave_pocket_follow {"Dimension":"$(Dimension)","Pos0":$(Pos0),"Pos1":$(Pos1),"Pos2":$(Pos2),"Rotation0":$(Rotation0)}
+$execute as @a[dz=15,dx=15,y=0,dy=15,gamemode=!spectator] run function pocket_dimension:leave_pocket_follow {"Dimension":"$(Dimension)","Pos0":$(Pos0),"Pos1":$(Pos1),"Pos2":$(Pos2),"Rotation0":$(Rotation0)}
 
 # mark pocket as unplaced
 data modify entity @s data.placed set value 0b

@@ -11,6 +11,6 @@ execute if score @s pocket_dimension.break_time matches 30..200 on passengers as
 # reset break time if interval reached
 execute if score @s pocket_dimension.break_time matches 30..200 run scoreboard players set @s pocket_dimension.break_time 0
 
-execute on passengers as @s[type=marker] run tellraw @a {"nbt":"data.break_interval","entity":"@s","color":"light_purple"}
+#execute on passengers as @s[type=marker] run tellraw @a {"nbt":"data.break_interval","entity":"@s","color":"light_purple"}
 
 #say breaking animation executed

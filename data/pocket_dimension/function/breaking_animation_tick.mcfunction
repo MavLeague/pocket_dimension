@@ -1,4 +1,4 @@
-tellraw @a {"score":{"name":"@s","objective":"pocket_dimension.break_time"},"color":"yellow"}
+#tellraw @a {"score":{"name":"@s","objective":"pocket_dimension.break_time"},"color":"yellow"}
 
 # initial reset
 execute if score @s pocket_dimension.break_time matches 1 on passengers as @s[type=item_display] run data modify entity @s transformation set value {left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0.1f,0f],scale:[1f,1f,1f]}

@@ -1,4 +1,7 @@
 # Place Pocket Dimension Function
+
+execute if dimension pocket_dimension:realm run return run function pocket_dimension:place_pocket_breakup
+
 # check if pocket has a counterpart
 function pocket_dimension:proof_placement with entity @s equipment.mainhand.components.minecraft:custom_data
 
