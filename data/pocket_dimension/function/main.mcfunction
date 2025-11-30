@@ -6,7 +6,7 @@ execute at @a as @e[distance=..20,type=interaction,tag=pocket_dimension.display.
 execute at @a as @e[distance=..20,type=interaction,tag=pocket_dimension.display.interaction] at @s if data entity @s interaction run function pocket_dimension:interaction_detection
 
 # Remove pocket dimension displays after a short time
-execute at @a as @e[distance=..20,tag=pocket_dimension.leave_marker,nbt={Age:2}] at @s run function pocket_dimension:remove_pocket_display
+#execute at @a as @e[distance=..20,tag=pocket_dimension.leave_marker,nbt={Age:2}] at @s run function pocket_dimension:remove_pocket_display
 
 # Place pocket dimension blocks initiated by armor stands
 execute if entity @a as @e[type=armor_stand,tag=pocket_dimension.block_initiator] at @s run function pocket_dimension:place_pocket

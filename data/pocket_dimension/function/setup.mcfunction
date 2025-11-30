@@ -18,7 +18,7 @@ execute in pocket_dimension:realm as @e[tag=pocket_dimension.anchor,type=marker]
 
 # save world spawn location
 summon area_effect_cloud ~ ~ ~ {Tags:["pocket_dimension","pocket_dimension.temp"],custom_particle:{type:"block",block_state:"minecraft:air"},Radius:0f,Duration:0}
-data modify storage pocket_dimension:temp world_spawn.dimension set from entity @n[tag=pocket_dimension.temp] Dimension
+data modify storage pocket_dimension:temp world_spawn.dimension set value "minecraft:overworld"
 data modify storage pocket_dimension:temp world_spawn.posX set from entity @n[tag=pocket_dimension.temp] Pos[0]
 data modify storage pocket_dimension:temp world_spawn.posY set from entity @n[tag=pocket_dimension.temp] Pos[1]
 data modify storage pocket_dimension:temp world_spawn.posZ set from entity @n[tag=pocket_dimension.temp] Pos[2]
