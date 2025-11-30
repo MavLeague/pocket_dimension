@@ -19,7 +19,7 @@ execute on target if entity @s[gamemode=creative] \
 #
 
 # debug
-execute unless score #max_health pocket_dimension.data = #health pocket_dimension.data unless entity @s[gamemode=creative] run title @s actionbar {"text":"You require full Health!","color":"yellow"}
+execute on target unless score #max_health pocket_dimension.data = #health pocket_dimension.data unless entity @s[gamemode=creative] run title @s actionbar {"text":"You require full Health!","color":"yellow"}
 
 # reset interaction
 data remove entity @s interaction
