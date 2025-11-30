@@ -1,10 +1,15 @@
 {
-  "type": "minecraft:crafting_shapeless",
-  "category": "equipment",
-  "ingredients": [
-    "minecraft:bundle",
-    "minecraft:nether_star"
-  ],
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#",
+        "E",
+        "B"
+    ],
+    "key": {
+        "#": "minecraft:amethyst_shard",
+        "E": "minecraft:ender_eye",
+        "B": "minecraft:bundle"
+    },
   "result": {
     "id": "minecraft:carrot_on_a_stick",
         "components": {

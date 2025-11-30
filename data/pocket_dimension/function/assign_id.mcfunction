@@ -8,7 +8,9 @@ function pocket_dimension:set_id with storage pocket_dimension:temp
 # generate Room (if needed)
 data modify storage pocket_dimension:temp room_exists set value 0
 
-execute in pocket_dimension:realm as @e[tag=pocket_dimension.anchor,type=marker] run function pocket_dimension:reconsider_id_score with entity @s data
+execute in pocket_dimension:realm as @e[tag=pocket_dimension.anchor,type=marker] \
+    run function pocket_dimension:reconsider_id_score with entity @s data
+#
 execute in pocket_dimension:realm as @e[tag=pocket_dimension.anchor,type=marker] \
     if score @s pocket_dimension.id = %step_id pocket_dimension.id \
     run data modify storage pocket_dimension:temp room_exists set value 1

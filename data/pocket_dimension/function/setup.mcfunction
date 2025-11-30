@@ -11,4 +11,7 @@ scoreboard objectives add pocket_dimension.id dummy
 scoreboard objectives add pocket_dimension.break_time dummy
 
 # set variables
-execute unless score %step_id pocket_dimension.id matches -1.. run scoreboard players set %step_id pocket_dimension.id -1
+execute unless score %step_id pocket_dimension.id matches -1.. run scoreboard players set %step_id pocket_dimension.id 0
+
+# reload all pockets if error occured
+execute in pocket_dimension:realm as @e[tag=pocket_dimension.anchor,type=marker] run function pocket_dimension:reconsider_id_score with entity @s data
