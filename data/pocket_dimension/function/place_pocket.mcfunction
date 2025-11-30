@@ -1,5 +1,16 @@
 # Place Pocket Dimension Function
 
+# error prevention
+data modify storage pocket_dimension:temp room_exists set value 0
+
+execute in pocket_dimension:realm as @e[tag=pocket_dimension.anchor,type=marker] \
+    run function pocket_dimension:reconsider_id_score with entity @s data
+#
+execute in pocket_dimension:realm as @e[tag=pocket_dimension.anchor,type=marker] \
+    if score @s pocket_dimension.id = %step_id pocket_dimension.id \
+    run data modify storage pocket_dimension:temp room_exists set value 1
+#
+execute unless data storage pocket_dimension:temp {room_exists:1} run return run function pocket_dimension:place_pocket_breakup
 execute if dimension pocket_dimension:realm run return run function pocket_dimension:place_pocket_breakup
 
 # check if pocket has a counterpart
