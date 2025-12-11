@@ -2,6 +2,8 @@
 # store pocket id
 execute on passengers as @s[type=marker] store result storage pocket_dimension:temp pocket_id int 1 run data get entity @s data.pocket_id
 
+execute on passengers as @s[type=marker] store result storage pocket_dimension:temp pos_x int 128 run data get storage pocket_dimension:temp pocket_id
+
 # prove full health
 execute on target store result score #max_health pocket_dimension.data run attribute @s max_health get 1
 execute on target store result score #health pocket_dimension.data run data get entity @s Health 1
