@@ -3,9 +3,15 @@
         "description": "Ressourcepack for Pocket Dimension",
 
         "min_format": 63,
-        "max_format": 69,
-
-        "pack_format": 63,
-        "supported_formats": { "min_inclusive": 63, "max_inclusive": 69 }
+        "max_format": 75
+    },
+    "overlays": {
+        "entries": [
+            {
+                "directory": "1_21_10",
+                "min_format": 63,
+                "max_format": 69
+            }
+        ]
     }
 }

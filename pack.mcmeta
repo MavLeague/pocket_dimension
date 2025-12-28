@@ -3,9 +3,6 @@
         "description": "This Datapack adds an Item with a small realm inside!",
 
         "min_format": 80,
-        "max_format": 88,
-
-        "pack_format": 81,
-        "supported_formats": [80, 88]
+        "max_format": 94
     }
 }
