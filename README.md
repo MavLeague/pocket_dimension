@@ -10,6 +10,10 @@ After creating the item, right-click to activate and enter it. There is only one
 
 Once you have activated your room, you can place it in the Overworld. Don't worry — if someone tries to destroy it while you're inside, you'll feel it. However, other players can also enter it as long as it is placed. If it gets destroyed, everyone inside will leave the pocket instantly.
 
+## Help
+In case you encounter some problems, have some questions, or just want to learn more about the pack, feel free to read the [Documentation](SUPPORT.md).
+If you still have questions, feel free to open an [Issue](https://github.com/MavLeague/pocket_dimension/issues) and help me to improve my pack!
+
 ## Expansions
 If you would like to use alternative textures with this pack, you can install <sub><a href="https://modrinth.com/resourcepack/new-pocket-dimension">[![New Pocket Dimension](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.modrinth.com%2Fv2%2Fproject%2Ficpz8Bnp&query=title&style=flat-square&logo=modrinth&label=%20&color=gray)](https://modrinth.com/resourcepack/new-pocket-dimension)</a></sub> to enhance your experience even further!
 
