@@ -78,7 +78,8 @@ There are two ways of obtaining one, crafting and with a command.
 
     /loot give @s loot pocket_dimension:pocket
 
-This command can be helpful when removing a broken pocket [(2)](#2-how-to-remove-the-pocket-display) and restoring the item to the player.
+> [!tip]
+> This command can be helpful when removing a broken pocket [(2)](#2-how-to-remove-the-pocket-display) and restoring the item to the player.
 
 #
 <p align="center">
