@@ -25,3 +25,7 @@ data modify storage pocket_dimension:temp world_spawn.posX set from entity @n[ta
 data modify storage pocket_dimension:temp world_spawn.posY set from entity @n[tag=pocket_dimension.temp] Pos[1]
 data modify storage pocket_dimension:temp world_spawn.posZ set from entity @n[tag=pocket_dimension.temp] Pos[2]
 execute as @n[tag=pocket_dimension.temp] run kill @s
+
+# revoke trigger advancements
+advancement revoke @a only pocket_dimension:leave_pocket
+advancement revoke @a only pocket_dimension:leave_rift
