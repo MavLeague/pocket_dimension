@@ -1,23 +1,23 @@
 {
   "model": {
     "type": "minecraft:select",
+    "property": "minecraft:display_context",
     "cases": [
       {
-        "model": {
-          "type": "minecraft:model",
-          "model": "pocket_dimension:pocket"
-        },
         "when": [
           "gui",
           "ground",
           "fixed"
-        ]
+        ],
+        "model": {
+          "type": "minecraft:model",
+          "model": "pocket_dimension:item/pocket"
+        }
       }
     ],
-    "property": "minecraft:display_context",
     "fallback": {
       "type": "minecraft:model",
-      "model": "pocket_dimension:pocket_display/outside"
+      "model": "pocket_dimension:item/pocket_display/outside"
     }
   }
 }

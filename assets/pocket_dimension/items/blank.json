@@ -1,7 +1,7 @@
 {
   "model": {
     "type": "minecraft:model",
-    "model": "pocket_dimension:blank"
+    "model": "pocket_dimension:item/blank"
   },
   "hand_animation_on_swap": false,
   "oversized_in_gui": false
