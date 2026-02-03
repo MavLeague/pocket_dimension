@@ -16,7 +16,7 @@ $execute in pocket_dimension:realm at @n[tag=pocket_dimension.anchor,nbt={data:{
 
 # move leashed entities if present
 tag @s add pocket_dimension.leasher
-execute as @e[distance=..6,type=!minecraft:player] if data entity @s leash run function pocket_dimension:enter_pocket_leash with storage pocket_dimension:temp
+execute as @e[distance=..6,type=#pocket_dimension:allowed_entities] if data entity @s leash run function pocket_dimension:enter_pocket_leash with storage pocket_dimension:temp
 tag @s remove pocket_dimension.leasher
 
 # try teleport to room
