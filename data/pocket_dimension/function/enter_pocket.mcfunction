@@ -14,6 +14,11 @@ $execute in pocket_dimension:realm at @n[tag=pocket_dimension.anchor,nbt={data:{
 $execute in pocket_dimension:realm at @n[tag=pocket_dimension.anchor,nbt={data:{id:$(pocket_id),type: 1}},distance=0..] run fill ~ ~ ~ ~8 ~ ~8 bedrock replace
 $execute in pocket_dimension:realm at @n[tag=pocket_dimension.anchor,nbt={data:{id:$(pocket_id),type: 2}},distance=0..] run fill ~5 ~4 ~5 ~11 ~4 ~11 bedrock replace
 
+# move leashed entities if present
+tag @s add pocket_dimension.leasher
+execute as @e[distance=..6,type=!minecraft:player] if data entity @s leash run function pocket_dimension:enter_pocket_leash with storage pocket_dimension:temp
+tag @s remove pocket_dimension.leasher
+
 # try teleport to room
 data modify storage pocket_dimension:temp enter_success set value 0b
 $execute in pocket_dimension:realm store success storage pocket_dimension:temp enter_success byte 1 at @n[tag=pocket_dimension.anchor,nbt={data:{id:$(pocket_id),type: 1}},distance=0..] run tp @s ~4 ~2 ~4
