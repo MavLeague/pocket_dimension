@@ -19,3 +19,6 @@ execute at @a as @e[distance=..20,type=interaction,tag=pocket_dimension.display.
 execute at @a as @e[distance=..20,type=interaction,tag=pocket_dimension.display.interaction,scores={pocket_dimension.break_time=200..}] run scoreboard players reset @s pocket_dimension.break_time
 
 execute at @a as @e[distance=..20,type=interaction,tag=pocket_dimension.display.interaction] if predicate pocket_dimension:breaking_animation_tick run function pocket_dimension:breaking_animation_tick
+
+# leave pocket when joining the game inside a pocket
+execute as @a[scores={pocket_dimension.leave_game=1..}] at @s run function pocket_dimension:read_exit_register

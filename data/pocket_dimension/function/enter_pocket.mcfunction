@@ -24,6 +24,11 @@ data modify storage pocket_dimension:temp enter_success set value 0b
 $execute in pocket_dimension:realm store success storage pocket_dimension:temp enter_success byte 1 at @n[tag=pocket_dimension.anchor,nbt={data:{id:$(pocket_id),type: 1}},distance=0..] run tp @s ~4 ~2 ~4
 $execute in pocket_dimension:realm store success storage pocket_dimension:temp enter_success byte 1 at @n[tag=pocket_dimension.anchor,nbt={data:{id:$(pocket_id),type: 2}},distance=0..] run tp @s ~8 ~6 ~8
 
+# save position if successful
+execute if data storage pocket_dimension:temp {enter_success:1b} run data modify storage pocket_dimension:temp register_exit.UUID set from entity @s UUID
+$execute if data storage pocket_dimension:temp {enter_success:1b} in pocket_dimension:realm run data modify storage pocket_dimension:temp register_exit.data set from entity @n[tag=pocket_dimension.anchor,nbt={data:{id:$(pocket_id)}},distance=0..] data
+execute if data storage pocket_dimension:temp {enter_success:1b} run function pocket_dimension:register_exit_location with storage pocket_dimension:temp register_exit
+
 # message
 execute in pocket_dimension:realm if data storage pocket_dimension:temp {enter_success:0b} run title @s actionbar {text:"Room isn't available or can't be entered!",color:"yellow"}
 

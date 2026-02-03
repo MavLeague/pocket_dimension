@@ -7,6 +7,7 @@ tellraw @a ["",{text:"⚠ If you find a bug,\nplease report it ",color:"red"},{t
 # create scoreboards
 scoreboard objectives add pocket_dimension.data dummy
 scoreboard objectives add pocket_dimension.carrot_on_a_stick minecraft.used:minecraft.carrot_on_a_stick
+scoreboard objectives add pocket_dimension.leave_game minecraft.custom:minecraft.leave_game
 scoreboard objectives add pocket_dimension.id dummy
 scoreboard objectives add pocket_dimension.break_time dummy
 
