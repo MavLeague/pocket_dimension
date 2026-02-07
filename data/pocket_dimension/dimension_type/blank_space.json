@@ -1,16 +1,20 @@
 {
-  "ultrawarm": false,
-  "natural": false,
-  "piglin_safe": true,
-  "respawn_anchor_works": false,
-  "bed_works": false,
-  "has_raids": false,
+  "attributes": {
+    "minecraft:gameplay/bed_rule": {
+      "can_sleep": "never",
+      "can_set_spawn": "never",
+      "explodes": false,
+      "error_message": "You cannot sleep in here!"
+    },
+    "minecraft:gameplay/sky_light_level": 10
+  },
   "has_skylight": false,
   "has_ceiling": false,
   "coordinate_scale": 1,
   "ambient_light": 1,
+  "has_fixed_time": true,
   "logical_height": 0,
-  "effects": "minecraft:the_end",
+  "skybox": "none",
   "infiniburn": "#minecraft:infiniburn_overworld",
   "min_y": 0,
   "height": 16,

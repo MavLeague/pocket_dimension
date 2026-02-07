@@ -1,0 +1,29 @@
+{
+  "values": [
+    "#minecraft:boat",
+    "minecraft:chicken",
+    "minecraft:cow",
+    "minecraft:pig",
+    "minecraft:sheep",
+    "minecraft:cat",
+    "minecraft:parrot",
+    "minecraft:wolf",
+    "minecraft:armadillo",
+    "minecraft:bat",
+    "minecraft:bee",
+    "minecraft:fox",
+    "minecraft:goat",
+    "minecraft:llama",
+    "minecraft:ocelot",
+    "minecraft:rabbit",
+    "minecraft:frog",
+    "minecraft:dolphin",
+    "minecraft:nautilus",
+    "minecraft:allay",
+    "minecraft:mooshroom",
+    "minecraft:copper_golem",
+    "minecraft:snow_golem",
+    "minecraft:villager",
+    "minecraft:strider"
+  ]
+}

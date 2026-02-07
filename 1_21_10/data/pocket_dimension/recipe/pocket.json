@@ -1,0 +1,28 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#",
+        "E",
+        "B"
+    ],
+    "key": {
+        "#": "minecraft:amethyst_shard",
+        "E": "minecraft:ender_eye",
+        "B": "minecraft:bundle"
+    },
+  "result": {
+    "id": "minecraft:carrot_on_a_stick",
+        "components": {
+        "minecraft:item_name": {"text":"Pocket Dimension"},
+        "minecraft:rarity": "epic",
+        "minecraft:item_model": "pocket_dimension:pocket",
+        "minecraft:lore": [
+            {"color":"white","italic":false,"text":"Teleport to your own private space"},
+            [{"color":"blue","italic":false,"text":"Requirement: "},{"bold":true,"italic":false,"text":"Full Health"}]
+        ],
+        "minecraft:custom_data": {
+            "pocket":1
+        }
+      }
+  }
+}
