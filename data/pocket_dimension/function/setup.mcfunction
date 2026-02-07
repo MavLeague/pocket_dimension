@@ -1,6 +1,6 @@
 tellraw @a ["\n",{text:"Pocket Dimensions",bold:false,color:"white"},{text:" are loaded!",bold:false,color:"white"}]
 
-tellraw @a [{text:"Version: ",color:"yellow"},{text:"1.21.10",color:"green"},{text:"1.0",color:"gray"}]
+tellraw @a [{text:"Version: ",color:"yellow"},{text:"1.21.11",color:"green"},{text:".1.3",color:"gray"}]
 
 tellraw @a ["",{text:"⚠ If you find a bug,\nplease report it ",color:"red"},{text:"here!",bold:false,underlined:true,color:"red",click_event:{action:"open_url",url:"https://github.com/MavLeague/pocket_dimension/issues"},hover_event:{action:"show_text",value:[{text:"GitHub Issue"}]}}]
 
