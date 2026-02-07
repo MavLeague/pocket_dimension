@@ -10,7 +10,8 @@
             {
                 "directory": "1_21_10",
                 "min_format": 63,
-                "max_format": 69
+                "max_format": 69,
+                "formats": [63, 69]
             }
         ]
     }
