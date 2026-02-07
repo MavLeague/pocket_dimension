@@ -10,8 +10,11 @@ execute if data entity @s respawn run data modify storage pocket_dimension:temp 
 execute if data entity @s respawn run data modify storage pocket_dimension:temp spawn_location.pitch set from entity @s respawn.pitch
 execute if data entity @s respawn run data modify storage pocket_dimension:temp spawn_location.yaw set from entity @s respawn.yaw
 
+# set to worldspawn if no respawn location is detected
 execute unless data entity @s respawn run data modify storage pocket_dimension:temp spawn_location set from storage pocket_dimension:temp world_spawn
 
+# set to worldspawn for illegal respawn locations
+execute if data storage pocket_dimension:temp {spawn_location:{dimension:"pocket_dimension:realm"}} run data modify storage pocket_dimension:temp spawn_location set from storage pocket_dimension:temp world_spawn
 
 function pocket_dimension:leave_rift_follow with storage pocket_dimension:temp spawn_location
 
