@@ -1,0 +1,3 @@
+$execute in pocket_dimension:realm as @n[tag=pocket_dimension.anchor,nbt={data:{id:$(pocket_id),type: 1}}] at @s if entity @p[dz=15,dx=15,y=0,dy=15,gamemode=!spectator] run particle falling_dust{block_state:"minecraft:granite"} ~4 ~7.5 ~4 4 0 4 0 50 normal
+$execute in pocket_dimension:realm as @n[tag=pocket_dimension.anchor,nbt={data:{id:$(pocket_id),type: 2}}] at @s if entity @p[dz=15,dx=15,y=0,dy=15,gamemode=!spectator] run particle falling_dust{block_state:"minecraft:granite"} ~8 ~11.5 ~8 4 0 4 0 50 normal
+$execute in pocket_dimension:realm as @n[tag=pocket_dimension.anchor,nbt={data:{id:$(pocket_id)}}] at @s run title @p[dz=15,dx=15,y=0,dy=15,gamemode=!spectator] actionbar {"text":"The pocket is breaking...","color":"yellow"}

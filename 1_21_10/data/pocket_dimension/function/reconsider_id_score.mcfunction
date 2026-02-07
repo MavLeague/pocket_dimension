@@ -1,0 +1,1 @@
+$scoreboard players set @s pocket_dimension.id $(id)

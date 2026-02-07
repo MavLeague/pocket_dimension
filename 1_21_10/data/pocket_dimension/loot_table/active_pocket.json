@@ -1,0 +1,67 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:armor_stand",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_name": {"text":"Unstable Pocket Dimension"},
+                "minecraft:rarity": "epic",
+                "minecraft:item_model": "pocket_dimension:unstable_pocket",
+                "minecraft:lore": [
+                  {"color":"white","italic":false,"text":"It can only be used once to leave the room"},
+                  [{"color":"blue","italic":false,"text":"Requirement: "},{"bold":true,"italic":false,"text":"None"}]
+                ],
+                "minecraft:custom_data": {
+                  "pocket":1,
+                  "pocket_id":-1
+                },
+                "minecraft:entity_data": {
+                  "id": "minecraft:armor_stand",
+                  "Invulnerable": true,
+                  "Silent": true,
+                  "Tags": [
+                    "pocket_dimension",
+                    "pocket_dimension.block_initiator"
+                  ],
+                  "equipment": {
+                    "mainhand": {
+                      "id": "minecraft:armor_stand",
+                      "components": {
+                        "minecraft:lore": [
+                          {
+                            "text": "Belongs to: ",
+                            "color": "blue",
+                            "bold": false,
+                            "italic": false,
+                            "extra": [
+                              {
+                                "selector": "@s",
+                                "bold": true
+                              }
+                            ]
+                          }
+                        ],
+                        "minecraft:custom_data": {
+                          "pocket_id": "-1"
+                        }
+                      }
+                    }
+                  },
+                  "Invisible": true,
+                  "NoBasePlate": true,
+                  "Small": true
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

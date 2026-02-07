@@ -1,0 +1,39 @@
+{
+  "criteria": {
+    "location": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": {
+          "location": {
+            "position": {
+              "x": {
+                "min": -1024,
+                "max": -1008
+              },
+              "y": {
+                "min": 0,
+                "max": 16
+              },
+              "z": {
+                "min": -1024,
+                "max": -1008
+              }
+            },
+            "dimension": "pocket_dimension:realm",
+            "block": {
+              "blocks": "minecraft:end_gateway"
+            }
+          }
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "location"
+    ]
+  ],
+  "rewards": {
+    "function": "pocket_dimension:leave_rift"
+  }
+}

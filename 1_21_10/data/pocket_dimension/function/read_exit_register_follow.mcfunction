@@ -1,0 +1,1 @@
+$function pocket_dimension:leave_pocket_follow with storage pocket_dimension:exit_register list[{UUID:$(UUID)}]
