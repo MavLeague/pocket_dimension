@@ -13,4 +13,4 @@ execute in pocket_dimension:realm as @e[type=item_display,tag=pocket_dimension.d
 
 # set to current version
 data modify storage pocket_dimension:temp game_version set value "1.21.11"
-data modify storage pocket_dimension:temp version set value "1.3"
+data modify storage pocket_dimension:temp version set value "2.0"
