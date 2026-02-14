@@ -1,9 +1,3 @@
-tellraw @a ["\n",{text:"Pocket Dimensions",bold:false,color:"white"},{text:" are loaded!",bold:false,color:"white"}]
-
-tellraw @a [{text:"Version: ",color:"yellow"},{text:"1.21.11",color:"green"},{text:".1.3",color:"gray"}]
-
-tellraw @a ["",{text:"⚠ If you find a bug,\nplease report it ",color:"red"},{text:"here!",bold:false,underlined:true,color:"red",click_event:{action:"open_url",url:"https://github.com/MavLeague/pocket_dimension/issues"},hover_event:{action:"show_text",value:[{text:"GitHub Issue"}]}}]
-
 # create scoreboards
 scoreboard objectives add pocket_dimension.data dummy
 scoreboard objectives add pocket_dimension.carrot_on_a_stick minecraft.used:minecraft.carrot_on_a_stick
@@ -30,3 +24,14 @@ execute as @n[tag=pocket_dimension.temp] run kill @s
 # revoke trigger advancements
 advancement revoke @a only pocket_dimension:leave_pocket
 advancement revoke @a only pocket_dimension:leave_rift
+
+# check for Version
+execute unless data storage pocket_dimension:temp {game_version:"1.21.11",version:"1.3"} run function pocket_dimension:update
+
+# loaded Message
+tellraw @a ["\n",{text:"Pocket Dimensions",bold:false,color:"white"},{text:" are loaded!",bold:false,color:"white"}]
+
+tellraw @a [{text:"Version: ",color:"yellow"},{storage:"pocket_dimension:temp",nbt:"game_version",color:"green"},{text:".",color:"gray"},{storage:"pocket_dimension:temp",nbt:"version",color:"gray"}]
+
+tellraw @a ["",{text:"⚠ If you find a bug,\nplease report it ",color:"red"},{text:"here!",bold:false,underlined:true,color:"red",click_event:{action:"open_url",url:"https://github.com/MavLeague/pocket_dimension/issues"},hover_event:{action:"show_text",value:[{text:"GitHub Issue"}]}}]
+
