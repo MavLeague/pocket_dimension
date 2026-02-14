@@ -6,7 +6,7 @@
       "explodes": false,
       "error_message": "You cannot sleep in here!"
     },
-    "minecraft:gameplay/sky_light_level": 10
+    "minecraft:gameplay/sky_light_level": 15
   },
   "has_skylight": false,
   "has_ceiling": false,
@@ -19,5 +19,6 @@
   "min_y": 0,
   "height": 16,
   "monster_spawn_light_level": 0,
-  "monster_spawn_block_light_limit": 0
+  "monster_spawn_block_light_limit": 0,
+  "cardinal_light": "nether"
 }
