@@ -13,12 +13,12 @@
   "result": {
     "id": "minecraft:carrot_on_a_stick",
         "components": {
-        "minecraft:item_name": {"text":"Pocket Dimension"},
+        "minecraft:item_name": {"translate":"item.pocket_dimension.pocket"},
         "minecraft:rarity": "epic",
         "minecraft:item_model": "pocket_dimension:pocket",
         "minecraft:lore": [
-            {"color":"white","italic":false,"text":"Teleport to your own private space"},
-            [{"color":"blue","italic":false,"text":"Requirement: "},{"bold":true,"italic":false,"text":"Full Health"}]
+            {"color":"white","italic":false,"translate":"item.pocket_dimension.pocket.lore1"},
+            [{"color":"blue","italic":false,"translate":"pocket_dimension.requirement"},{"bold":true,"italic":false,"translate":"pocket_dimension.requirement.full_health"}]
         ],
         "minecraft:custom_data": {
             "pocket":1

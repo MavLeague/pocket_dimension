@@ -4,7 +4,9 @@
       "can_sleep": "never",
       "can_set_spawn": "never",
       "explodes": false,
-      "error_message": "You cannot sleep in here!"
+      "error_message": {
+        "translate": "pocket_dimension.message.cannot_sleep"
+      }
     },
     "minecraft:gameplay/sky_light_level": 15
   },

@@ -30,6 +30,6 @@ $execute if data storage pocket_dimension:temp {enter_success:1b} in pocket_dime
 execute if data storage pocket_dimension:temp {enter_success:1b} run function pocket_dimension:register_exit_location with storage pocket_dimension:temp register_exit
 
 # message
-execute in pocket_dimension:realm if data storage pocket_dimension:temp {enter_success:0b} run title @s actionbar {text:"Room isn't available or can't be entered!",color:"yellow"}
+execute in pocket_dimension:realm if data storage pocket_dimension:temp {enter_success:0b} run title @s actionbar {translate:pocket_dimension.message.no_room_available,color:"yellow"}
 
 #tag @s add pocket_dimension.entered

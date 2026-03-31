@@ -15,4 +15,4 @@ $execute if score %step_id pocket_dimension.id matches $(pocket_id) run scoreboa
 # remove anchor marker
 $execute in pocket_dimension:realm as @n[tag=pocket_dimension.anchor,nbt={data:{id:$(pocket_id)}},distance=0..] run kill @s
 
-tellraw @s [{"text":"Pocket Dimension has been removed.","color":"yellow"},"\n",{"text":"Make sure to remove all placed pockets using: ","color":"yellow"},{text:"this command!",underlined:true,color:"blue",click_event:{action:"suggest_command",command:"/function pocket_dimension:remove_pocket_display"},hover_event:{action:"show_text",value:[{text:"send to chat"}]}}]
+tellraw @s [{translate:pocket_dimension.message.pocket_removed,"color":"yellow"},"\n",{translate:pocket_dimension.message.pocket_removed.description,"color":"yellow",with:[{translate:pocket_dimension.message.this_command,underlined:true,color:"blue",click_event:{action:"suggest_command",command:"/function pocket_dimension:remove_pocket_display"},hover_event:{action:"show_text",value:[{translate:pocket_dimension.message.send_to_chat}]}}]}]

@@ -1,7 +1,7 @@
 advancement revoke @s only pocket_dimension:leave_rift
 
 execute store result storage pocket_dimension:temp inventory_items int 1 run clear @s * 0
-execute unless data storage pocket_dimension:temp {inventory_items:0} run return run title @s actionbar {"text":"You cannot leave the rift with items in your inventory!","color":"yellow"}
+execute unless data storage pocket_dimension:temp {inventory_items:0} run return run title @s actionbar {translate:pocket_dimension.message.rift.require_clear_inventory,"color":"yellow"}
 
 execute if data entity @s respawn run data modify storage pocket_dimension:temp spawn_location.dimension set from entity @s respawn.dimension
 execute if data entity @s respawn run data modify storage pocket_dimension:temp spawn_location.posX set from entity @s respawn.pos[0]
