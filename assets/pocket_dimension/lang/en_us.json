@@ -2,6 +2,7 @@
   "pocket_dimension.actionbar.dimension_created": "Dimension has been created!",
   "pocket_dimension.actionbar.pocket_unplaceable": "Pocket is unplaceable!",
   "pocket_dimension.actionbar.pocket_already_placed": "Pocket is already placed!",
+  "pocket_dimension.actionbar.breaking_alert": "The pocket is breaking...",
   "item.pocket_dimension.pocket": "Pocket Dimension",
   "item.pocket_dimension.pocket.lore1": "Teleport to your own private space",
   "item.pocket_dimension.unstable_pocket": "Unstable Pocket Dimension",

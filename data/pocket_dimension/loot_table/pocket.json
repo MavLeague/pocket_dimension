@@ -18,7 +18,7 @@
                   [{"color":"blue","italic":false,"translate":"pocket_dimension.requirement"},{"bold":true,"italic":false,"translate":"pocket_dimension.requirement.full_health"}]
                 ],
                 "minecraft:custom_data": {
-                  "pocket":1
+                  "pocket_id":1
                 }
               }
             }
