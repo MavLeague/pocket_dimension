@@ -26,7 +26,7 @@ advancement revoke @a only pocket_dimension:leave_pocket
 advancement revoke @a only pocket_dimension:leave_rift
 
 # check for Version
-execute unless data storage pocket_dimension:temp {game_version:"1.21.11",version:"2.0"} run function pocket_dimension:update
+execute unless data storage pocket_dimension:temp {game_version:"1.21.11",version:"3.0"} run function pocket_dimension:update
 
 # loaded Message
 tellraw @a ["\n",{translate:pocket_dimension.message.game_loaded,bold:false,color:"white",with:[{text:"Pocket Dimensions",bold:false,color:"white"}]}]
