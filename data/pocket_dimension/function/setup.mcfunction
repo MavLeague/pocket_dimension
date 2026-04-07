@@ -31,7 +31,7 @@ execute unless data storage pocket_dimension:temp {game_version:"1.21.11",versio
 # loaded Message
 tellraw @a ["\n",{translate:pocket_dimension.message.game_loaded,bold:false,color:"white",with:[{text:"Pocket Dimensions",bold:false,color:"white"}]}]
 
-tellraw @a [{translate:pocket_dimension.message.version,color:"yellow",with:[{storage:"pocket_dimension:temp",nbt:"game_version",color:"green"},{storage:"pocket_dimension:temp",nbt:"version",color:"gray"}]}]
+tellraw @a [{translate:pocket_dimension.message.version,color:"yellow",with:[{storage:"pocket_dimension:temp",nbt:game_version,color:"green",interpret:true},{storage:"pocket_dimension:temp",nbt:version,color:"gray",interpret:true}]}]
 
 tellraw @a ["",{translate:pocket_dimension.message.report_bug,color:"red",with:[{translate:pocket_dimension.message.here,bold:false,underlined:true,color:"red",click_event:{action:"open_url",url:"https://github.com/MavLeague/pocket_dimension/issues"},hover_event:{action:"show_text",value:[{text:"GitHub Issue"}]}}]}]
 

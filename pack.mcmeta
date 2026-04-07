@@ -3,9 +3,9 @@
         "description": "This Datapack adds an Item with a small realm inside!",
 
         "min_format": 80,
-        "max_format": 94,
-        "pack_format": 94,
-        "supported_formats": [80, 94]
+        "max_format": 101,
+        "pack_format": 101,
+        "supported_formats": [80, 101]
     },
     "overlays": {
         "entries": [
