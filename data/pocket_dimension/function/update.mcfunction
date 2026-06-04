@@ -12,5 +12,5 @@ execute in pocket_dimension:realm as @e[type=item_display,tag=pocket_dimension.d
 execute in pocket_dimension:realm as @e[type=item_display,tag=pocket_dimension.display.teleport] unless data entity @s brightness run data modify entity @s brightness set value {sky:0,block:0}
 
 # set to current version
-data modify storage pocket_dimension:temp game_version set value "1.21.11"
-data modify storage pocket_dimension:temp version set value "3.0"
+data modify storage pocket_dimension:temp game_version set value "26.1"
+data modify storage pocket_dimension:temp version set value "3.1"
