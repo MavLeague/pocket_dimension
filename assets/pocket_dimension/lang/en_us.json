@@ -14,6 +14,7 @@
   "pocket_dimension.message.game_loaded": "%s is loaded!",
   "pocket_dimension.message.version": "Version: %s.%s",
   "pocket_dimension.message.report_bug": "⚠ If you find a bug,\nplease report it %s",
+  "pocket_dimension.message.loaded_resources":"\u00A7a✓ Resorcepack has been loaded successfully!",
   "pocket_dimension.message.cannot_sleep": "You cannot sleep in here!",
   "pocket_dimension.message.no_room_available": "Room isn't available or can't be entered!",
   "pocket_dimension.message.require_full_health": "You require full Health!",
