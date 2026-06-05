@@ -1,0 +1,73 @@
+name: Bug Report
+description: Create a report to help us improve the Pocket Dimension mod.
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this bug report!
+        Please provide as much information as possible so the issue can be reproduced and fixed.
+  - type: dropdown
+    id: mod_loader
+    attributes:
+      label: Mod Loader
+      description: Which mod loader are you using?
+      options:
+        - Fabric/ Quilt
+        - NeoForge/ Forge
+        - Datapack
+    validations:
+      required: true
+  - type: input
+    id: mc_version
+    attributes:
+      label: Minecraft Version
+      description: Which version of Minecraft are you playing on?
+      placeholder: e.g., 1.21.11 or 26.1
+    validations:
+      required: true
+  - type: input
+    id: mod_version
+    attributes:
+      label: Mod Version
+      description: Which version of the Pocket Dimension mod are you using?
+      placeholder: e.g., 1.21.11.3.0 or 26.1-3.1
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Bug Description
+      description: A clear and concise description of what the bug is.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps to Reproduce
+      description: How can the bug be reproduced?
+      placeholder: |
+        1. Place the item '...'
+        2. Enter the dimension...
+        3. See error...
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Crash Report / Logs
+      description: Please provide a link to a paste site (like mclo.gs, pastebin, or GitHub Gist) with your latest.log or crash-report. Do NOT paste the entire log text directly into this field.
+    validations:
+      required: false
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Checks
+      options:
+        - label: I have thoroughly read the [Documentation](https://github.com/MavLeague/pocket_dimension/blob/main/SUPPORT.md) and attempted all provided steps to resolve my issue.
+          required: true
+        - label: I have searched the existing issues to ensure this has not already been reported.
+          required: true
+        - label: I am using the latest available version of the mod.
+          required: true

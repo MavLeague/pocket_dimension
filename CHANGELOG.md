@@ -59,7 +59,13 @@ Translation support has been added. You can now translate the pack! Help me tran
 
 Proper mod support has been added. Packaged mods now have a registered item ID for the item. This allows mods like JEI to recognise it properly. It can also now be found in the Creative inventory.
 
-# 3.1 (26.1.1)
+# 3.1 (26.1)
 ## #12 Migraded to Version 26.1.1
 
-Text
+Made minor changes to the dimension type to add compatability with the new version. Changed version numbers to include the newer version.
+
+## #13 Reworked Mod packages (only fabric)
+
+In the last update, I added proper mod packages for Minecraft version 1.21.11. For the new version, however, I had to redo the whole thing for several reasons. The consequence of this is that it no longer relies on the architecture API, but is now fully independent. However, this also forced me to choose an ecosystem, as I had to code everything separately for Fabric and Neoforge.
+
+As there is more demand for the Fabric version, I will discontinue the NeoForge packaging and only create standard packaging similar to past versions. I apologise for this. However, if demand persists, please contact me on GitHub and I will consider it.
