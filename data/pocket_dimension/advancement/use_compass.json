@@ -1,0 +1,27 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "item": {
+            "items": [
+                "minecraft:compass"
+            ],
+          "predicates": {
+                "minecraft:custom_data": {
+                  "compass":1
+                }
+            }
+        }
+      }
+    }
+  },
+    "requirements": [
+    [
+      "requirement"
+    ]
+  ],
+  "rewards": {
+    "function": "pocket_dimension:read_compass"
+  }
+}

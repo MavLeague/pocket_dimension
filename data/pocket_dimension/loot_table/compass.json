@@ -1,0 +1,36 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:compass",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_name": {"translate":"item.pocket_dimension.compass"},
+                "minecraft:rarity": "rare",
+                "minecraft:lore": [
+                  {"color":"white","italic":false,"translate":"item.pocket_dimension.compass.lore1"}
+                ],
+                "minecraft:custom_data": {
+                  "compass":1
+                },
+                "minecraft:lodestone_tracker": {
+                  "tracked": true
+                },
+                "minecraft:consumable": {
+                  "animation": "none",
+                  "has_consume_particles": false,
+                  "consume_seconds": 999999999
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

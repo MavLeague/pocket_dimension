@@ -5,6 +5,8 @@
   "pocket_dimension.actionbar.breaking_alert": "The pocket is breaking...",
   "item.pocket_dimension.pocket": "Pocket Dimension",
   "item.pocket_dimension.pocket.lore1": "Teleport to your own private space",
+  "item.pocket_dimension.compass": "Pocket Locator Compass",
+  "item.pocket_dimension.compass.lore1": "Find your own Pocket Dimension anywhere in the world",
   "item.pocket_dimension.unstable_pocket": "Unstable Pocket Dimension",
   "item.pocket_dimension.unstable_pocket.lore1": "It can only be used once to leave the room",
   "pocket_dimension.requirement": "Requirement: ",
