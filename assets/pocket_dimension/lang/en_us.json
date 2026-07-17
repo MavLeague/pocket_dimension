@@ -1,8 +1,11 @@
 {
+  "pocket_dimension.error_code":"Error Code",
   "pocket_dimension.actionbar.dimension_created": "Dimension has been created!",
   "pocket_dimension.actionbar.pocket_unplaceable": "Pocket is unplaceable!",
   "pocket_dimension.actionbar.pocket_already_placed": "Pocket is already placed!",
   "pocket_dimension.actionbar.breaking_alert": "The pocket is breaking...",
+  "pocket_dimension.actionbar.realm_not_loaded":"Custom Dimension not loaded correctly!",
+  "pocket_dimension.actionbar.pocket_not_loaded":"Pocket Dimension not loaded correctly!",
   "item.pocket_dimension.pocket": "Pocket Dimension",
   "item.pocket_dimension.pocket.lore1": "Teleport to your own private space",
   "item.pocket_dimension.compass": "Pocket Locator Compass",
@@ -25,5 +28,6 @@
   "pocket_dimension.message.pocket_removed.description": "Make sure to remove all placed pockets using %s!",
   "pocket_dimension.message.this_command": "this command",
   "pocket_dimension.message.send_to_chat": "send to chat",
-  "pocket_dimension.message.here": "here"
+  "pocket_dimension.message.here": "here",
+  "pocket_dimension.message.loaded_chunks":"Loaded chunk for Pocket: %s"
 }

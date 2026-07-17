@@ -1,3 +1,10 @@
+# Error Codes
+
+| Error Code | Error | Solution |
+|------------|--------|--------|
+|100 |Custom Dimension ```pocket_dimension:realm``` has not been loaded correctly|Restart your world or server|
+|101 |Pocket Dimension Anchor has not been loaded|Forceloading the desired chunks did not work correctly. This can be caused by performance or other mods that influence chunk loading. Run ```/function pocket_dimension:force_pocket_chunkload``` to reload the right chunks.|
+|102 | Ressourcepack not installed or unable to load |Reinstall the same version as your datapack from [Modrinth](https://modrinth.com/datapack/pocket_dimension/versions?l=datapack).|
 # Q & A
 ## (1) I can't enter a pocket!
 If this message is stated something went wrong:
@@ -8,9 +15,14 @@ This issue can happen when the custom dimension has not been loaded successfully
 1. Try restart your server.
 2. You might need to activate custom dimensions somewhere. This could be caused by other mods, plugins or loaders. I cannot influence that behavior with my pack unfortunately.
 
-To proof if thats the problem, try this command:
+    To proof if thats the problem, try this command:
 
-    /execute in pocket_dimension:realm if dimension pocket_dimension:realm
+        /execute in pocket_dimension:realm if dimension pocket_dimension:realm
+
+3. If the dimension is correctly loaded, reload the chunks with this command:
+
+        /function pocket_dimension:force_pocket_chunkload
+
 
 ## (2) How to remove the pocket display?
 In case the custom dimension `pocket_dimension:realm` cannot be loaded you won't be able to break the pocket. This happens due to a failing verification process when the pack tries to generate the item. This behaviour is not intended as the datapack is not designed to handle such errors. If it happens anyways you can use this command to remove them:

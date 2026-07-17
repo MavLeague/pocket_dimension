@@ -35,4 +35,4 @@ tellraw @a [{translate:pocket_dimension.message.version,color:"yellow",with:[{st
 
 tellraw @a ["",{translate:pocket_dimension.message.report_bug,color:"gray",with:[{translate:pocket_dimension.message.here,bold:false,underlined:true,color:"gray",click_event:{action:"open_url",url:"https://github.com/MavLeague/pocket_dimension/issues"},hover_event:{action:"show_text",value:[{text:"GitHub Issue"}]}}]}]
 
-tellraw @a ["",{translate:pocket_dimension.message.loaded_resources,color:"red",fallback:"✗ Ressourcepack not installed or unable to load! Please download and reinstall here: %s",with:[{text:"Modrinth", color:"blue",underlined:true,click_event:{action:"open_url",url:"https://modrinth.com/datapack/ycIKn71C/versions?l=datapack"}}]}]
+tellraw @a ["",{translate:pocket_dimension.message.loaded_resources,color:"red",fallback:"✗ Error 102: Ressourcepack not installed or unable to load! Please download and reinstall here: %s",with:[{text:"Modrinth", color:"blue",underlined:true,click_event:{action:"open_url",url:"https://modrinth.com/datapack/ycIKn71C/versions?l=datapack"}}]}]

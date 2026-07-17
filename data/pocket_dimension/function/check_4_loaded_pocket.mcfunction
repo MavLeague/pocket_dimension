@@ -1,0 +1,1 @@
+$execute store success storage pocket_dimension:temp pocket_loaded byte 1 in pocket_dimension:realm if entity @n[tag=pocket_dimension.anchor,nbt={data:{id:$(pocket_id)}}]
